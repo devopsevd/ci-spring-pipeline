@@ -6,7 +6,7 @@ node{
         stage('Preparation'){
                         
             
-            git credentialsId: '71d1b4da-7701-4a84-9ecd-48cfb18b5e3b', url: 'https://devopsdemoaws@bitbucket.org/devopsdemoaws/simple-spring-update.git'
+            git credentialsId: '9957a419-6d9b-4139-b297-3ed9658faa03', url: 'https://devopsdemoaws@bitbucket.org/devopsdemoaws/simple-spring-update.git'
             mvnHome = tool 'Maven'
         }
 
