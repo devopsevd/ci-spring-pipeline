@@ -6,7 +6,7 @@ node("BuildServer"){
         stage('Preparation'){
                         
             
-            git credentialsId: '9957a419-6d9b-4139-b297-3ed9658faa03', url: 'https://devopsdemoaws@bitbucket.org/devopsdemoaws/simple-spring-update.git'
+            git url: 'https://github.com/devopsevd/ci-spring.git'
             mvnHome = tool 'Maven'
         }
 
