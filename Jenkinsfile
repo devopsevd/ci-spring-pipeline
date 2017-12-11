@@ -32,7 +32,8 @@ node("BuildServer") {
                 sh "'${mvnHome}/bin/mvn' -Dgrid.server.url=http://10.144.2.237:4444/wd/hub clean test "
             }
             stage('Functional Test Results') {
-            junit '**/target/surefire-reports/TEST-*.xml'
+            cucumber fileIncludePattern: '**/*.json', sortingMethod: 'ALPHABETICAL'
+            //junit '**/target/surefire-reports/TEST-*.xml'
             }
     }
 }
