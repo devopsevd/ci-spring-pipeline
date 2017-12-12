@@ -33,7 +33,6 @@ node("BuildServer") {
             }
             stage('Functional Test Results') {
             cucumber fileIncludePattern: '**/*.json', sortingMethod: 'ALPHABETICAL'
-            //junit '**/target/surefire-reports/TEST-*.xml'
             }
     }
 }
